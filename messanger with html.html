@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Messenger</title>
+<link rel="icon" type="image/png" href="thumbnails/messenger icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Nunito:wght@500&family=Unbounded&display=swap" rel="stylesheet">
+
+<style>
+  .big-box{
+    width: 980px;
+  }
+  .p{
+    color: white;
+    font-family: 'Itim', cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 6px;
+    margin-left: 7px;
+  }
+.left-box{
+  display: inline-block;
+  width: 271px;
+  padding-left: px;
+  background-color: black;
+}
+.search-bar{
+  margin-left: 15px;
+  background-color: #888888;
+  border: none;
+  width: 235px;
+  height: 29px;
+  padding-left: 10px;
+  margin-bottom: 8px;
+
+}
+.chat{
+  font-family: 'Itim', cursive;
+  color: white;
+  margin-left: 15px;
+
+}
+.right-box{
+  display: inline-block;
+  margin-right:0px;
+
+}
+
+
+
+
+
+.freind1{
+  width: 40px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 10px;
+
+
+
+
+
+}
+.img-box,.freind-info{
+  display: inline-block;
+}
+.username{
+  color: white;
+  margin-top: px;
+  margin-bottom: 0px;
+}
+.msgs-color{
+  color: #888888;
+  font-family: 'Itim', cursive;
+  margin-top: 0px;
+  margin-bottom: 9px;
+  margin-left: 7px;
+  padding-bottom: 7px;
+
+}
+.freind11{
+  
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.freind11:hover{
+  opacity: 0.7;
+}
+
+.freind11:active{
+  opacity: 0.5;
+  
+}
+.freind1:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+.freind1:active{
+  opacity: 0.5;
+
+
+
+}
+
+.right-box{
+  display: inline-block;
+  height: 547px;
+  width: 700px;
+  vertical-align: top;
+
+
+
+
+}
+.header{
+  background-color: #5200cc;
+  width: 700px;
+  height: 70px;
+  border-bottom: 2px;
+  border-color: #888888;
+  border-width: 2px;
+}
+
+.profile-img{
+  width: 40px;
+  border-radius: 20px ;
+  margin-left: 13px;
+  margin-top: 10px;
+
+}
+.name,.state{
+  margin-left: 13px;
+  font-family: 'Itim', cursive;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.name{
+  color: white;
+  vertical-align: top;
+}
+.state{
+  color: #888888;
+  margin-bottom: 8px;
+
+}
+.img-side,.freind-username{
+  display: inline-block;
+}
+
+
+.content{
+  width: 700px;
+  height: 30px;
+  background-color: #0099ff;
+
+
+}
+
+.texting{
+  display: inline-block;
+  height: 71px;
+  width: 700px;
+  background-color:#0099ff ;
+
+}
+
+.buttons{
+  display: inline-block;
+  margin-left: 400px;
+}
+.btns-function{
+  width: 20px;
+  vertical-align: left;
+  margin-right:10px ;
+  cursor: pointer;
+
+}
+.btns-function:hover{
+  opacity: 0.7;
+}
+
+.btns-function:active{
+
+  opacity: 0.5;
+
+}
+.profile-img{
+  cursor: pointer;
+}
+
+
+.add{
+  display: inline-block;
+}
+.texting{
+  background-color: #005c99;
+}
+.add-icon-btn{
+  width: 35px;
+  margin-top: 15px;
+  margin-left: 15px;
+  cursor: pointer;
+
+
+}
+.add-icon-btn:active{
+  opacity: 0.7;
+}
+
+.typing-box,.typing-bar,.stickers-stuff,.emojis-box,.little-img-box{
+  display: inline-block;
+}
+
+.stickers-stuff{
+  width: 35px;
+  cursor: pointer;
+
+
+}
+.stickers-stuff:hover{
+  opacity: 0.7;
+
+
+}
+
+.typing-box{
+  width: 500px;
+  height: 0px;
+  padding-bottom: 25px;
+}
+
+.typing-bar{
+  margin-left: 15px;
+  width:450px ;
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: 	#5200cc;
+  color: white;
+  padding-left: 10px;
+
+}
+.emojis-box{
+  width: 140px;
+}
+
+.emojis-box{
+  margin-left: 2px;
+}
+
+
+.msg-content{
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.msg-box{
+  width: 100px;
+  height: 30px;
+  background-color: #5200cc;
+  border-radius: 15px;
+  display: inline-block;
+  margin-left: 570px;
+  padding-left: 10px;
+  padding-top: 4px;
+  font-family: 'Itim', cursive;
+  color: white;
+}
+
+.little-img-box{
+  width: 13px;
+  height: 30px;
+  
+}
+
+.little-img{
+  display: inline-block;
+  width: 12px;
+  border-radius: 6px;
+  vertical-align: bottom;
+  
+}
+.ayoub-msg-box{
+  width: 100px;
+  height: 30px;
+  background-color: #5200cc;
+  border-radius: 15px;
+  display: inline-block;
+  margin-left: 5px;
+  padding-left: 10px;
+  padding-top: 4px;
+  font-family: 'Itim', cursive;
+  color: white;
+}
+.msg-time-box{
+  font-family: 'Itim', cursive;
+  color: white;
+  margin-left: 320px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="big-box" >
+
+  <div class="left-box" >
+    <p  class="chat">Chats </p>
+    <input class="search-bar" type="text" placeholder="Search (Ctrl+K)" >
+    <div class="freinds-online">
+      <img class="freind1" src="thumbnails/godkingdarius.jpg">
+      <img class="freind1" src="thumbnails/ayoub.jpg">
+      <img class="freind1" src="thumbnails/rahim.jpg">
+      <img class="freind1" src="thumbnails/yacine.jpg">
+
+
+    </div>
+    <div class="all-freinds" >
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/yacine.jpg">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">Yacine Yacuo</p>
+          <p  class="msgs-color" class="last-msg-time">street fighter ab ... &#183;  18:22 PM </p>
+        </div>
+
+
+
+      </div>
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/godkingdarius.jpg">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">Abdelhake Abdo</p>
+          <p  class="msgs-color" class="last-msg-time"> You sent a photo &#183;  Tue </p>
+        </div>
+
+
+
+      </div>
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/ayoub.jpg">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">Ayoub San</p>
+          <p  class="msgs-color" class="last-msg-time">???? &#183;  Tue </p>
+        </div>
+
+
+
+      </div>
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/rahim.jpg">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">Amarouche Abderahim</p>
+          <p  class="msgs-color" class="last-msg-time">kifah &#183;  tue</p>
+        </div>
+
+
+
+      </div>
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/hakim.jpg">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">Hakim Ouali</p>
+          <p  class="msgs-color" class="last-msg-time">You sent a photo &#183;  Mon </p>
+        </div>
+
+
+
+      </div>
+      <div class="freind11" >
+        <div class="img-box">
+          <img class="freind1" src="thumbnails/news">
+
+        </div>
+        <div class="freind-info" >
+          <p class="p"  class="username">news بوفضيحة</p>
+          <p  class="msgs-color" class="last-msg-time">You sent a video &#183;  mon </p>
+        </div>
+
+
+
+      </div>
+      
+
+
+
+
+
+    </div>
+
+  </div>
+
+  <div class="right-box">
+    <div class="header">
+      <div class="img-side" >
+        <img class="profile-img" src="thumbnails/ayoub.jpg">
+        
+      </div>
+      <div class="freind-username">
+        <p class="name" >Ayoub San</p>
+        <p class="state" >Active Now</p>
+
+      </div>
+      <div class="buttons" >
+        <img class="btns-function" src="thumbnails/call-icon.png">
+        <img class="btns-function" src="thumbnails/video-call.png">
+        <img class="btns-function" src="thumbnails/search-icon.png">
+        <img class="btns-function" src="thumbnails/settings-icon.png">
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+    <div class="content" >
+      <div class="ms-box" >
+        
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="ms-box" >
+        
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="ayoub-msg-box" >
+        <P class="msg-content" >ih</P>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="ayou-msg-box" >
+        
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-time-box" >
+        <p class="msg-content" >1:30 AM</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="ms-box" >
+        
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub </p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ayoub</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >ji lsala</p>
+      </div>
+
+
+
+
+    </div>
+    <div class="content" >
+      <div class="msg-box" >
+        <p class="msg-content" >????</p>
+      </div>
+      <div class="little-img-box">
+        <img class="little-img" src="thumbnails/ayoub.jpg">
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div class="texting" >
+
+      <div class="add" >
+        <img class="add-icon-btn" src="thumbnails/add-icon.png">
+
+
+      </div>
+
+      <div class="typing-box">
+        <input class="typing-bar" type="text" placeholder="Type a message..." >
+        
+
+
+      </div>
+      <div class="emojis-box">
+
+        <img class="stickers-stuff" src="thumbnails/sticker-icon.png">
+        <img class="stickers-stuff" src="thumbnails/emoji-icon.png">
+        <img class="stickers-stuff" src="thumbnails/blue-like-icon.png">
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
